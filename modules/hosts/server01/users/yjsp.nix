@@ -53,6 +53,8 @@
       programs-utilities-payrespects
       programs-utilities-tldr
 
+      programs-versioncontrol-git
+
       system-fonts-jetbrainsmono
       system-hardware-network
       system-users-groups
