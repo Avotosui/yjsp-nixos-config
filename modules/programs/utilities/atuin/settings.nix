@@ -38,7 +38,6 @@
       sync.records = true;
       sync_frequency = "1h";
       sync_address = "https://api.atuin.sh";
-      theme.name = "tokyo-night";
       tmux.enabled = true;
       update_check = false;
     };

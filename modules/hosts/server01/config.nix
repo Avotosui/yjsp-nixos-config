@@ -34,8 +34,10 @@
       variant = "";
     };
 
-    flake.nixosConfigurations.server01 = inputs.nixpkgs.lib.nixosSystems {
-      modules = [self.modules.hosts-server01];
-    };
+    system.stateVersion = "26.05";
+  };
+
+  flake.nixosConfigurations.server01 = inputs.nixpkgs.lib.nixosSystem {
+    modules = [self.modules.nixos.hosts-server01];
   };
 }
