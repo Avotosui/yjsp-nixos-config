@@ -1,0 +1,43 @@
+{
+  inputs = {
+    flake-compat.url = "github:nixos/flake-compat";
+    flake-parts.url = "github:hercules-ci/flake-parts";
+    nix-index-database.url = "github:nix-community/nix-index-database";
+
+    nixpkgs-master.url = "github:nixos/nixpkgs/master";
+    nixpkgs-stable.url = "github:nixos/nixpkgs/nixos-26.05";
+    nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
+
+    home-manager = {
+      url = "github:nix-community/home-manager";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
+
+    nix-alien = {
+      url = "github:thiagokokada/nix-alien";
+
+      inputs = {
+        flake-compat.follows = "flake-compat";
+        nix-index-database.follows = "nix-index-database";
+        nixpkgs.follows = "nix-index-database/nixpkgs";
+      };
+    };
+
+    nixos-hardware = {
+      url = "github:nixos/nixos-hardware";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
+
+    sops-nix = {
+      url = "github:Mic92/sops-nix";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
+  };
+
+  outputs = inputs: let
+    inherit (inputs.nixpkgs) lib;
+    isModule = file: file.hasExt "nix" && file.name != "flake.nix";
+    modulesAt = path: lib.fileset.toList (lib.fileset.fileFilter isModule path);
+  in
+    inputs.flake-parts.lib.mkFlake {inherit inputs;} {imports = modulesAt ./.;};
+}
