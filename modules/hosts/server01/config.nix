@@ -7,9 +7,11 @@
     imports = with self.modules.nixos; [
       hosts-server01-users-yjsp
 
+      programs-customization-catppuccin
       programs-desktops-gnome
       programs-fhscompat-nixld
       programs-networking-openssh
+      programs-shells-zsh
       programs-packagemanagers-nix
 
       system-boot-systemdboot

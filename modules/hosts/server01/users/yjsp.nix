@@ -10,12 +10,16 @@
       isNormalUser = true;
       description = "yjsp";
       extraGroups = ["wheel"];
+      shell = pkgs.zsh;
     };
   };
 
   flake.modules.homeManager.hosts-server01-users-yjsp = {
     imports = with self.modules.homeManager; [
       programs-browsers-firefox
+
+      programs-customization-catppuccin
+      programs-customization-starship
 
       programs-editors-neovim # for me in case i need to debug
 
@@ -24,6 +28,9 @@
       programs-security-sshagent
 
       programs-fhscompat-nixalien
+
+      programs-shells-bash
+      programs-shells-zsh
 
       programs-utilities-atuin
       programs-utilities-fzf
