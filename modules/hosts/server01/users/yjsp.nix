@@ -18,8 +18,14 @@
     imports = with self.modules.homeManager; [
       programs-browsers-firefox
 
+      programs-compression-p7zip
+      programs-compression-xz
+      programs-compression-zip
+
       programs-customization-catppuccin
       programs-customization-starship
+
+      programs-development-direnv
 
       programs-editors-neovim # for me in case i need to debug
 
