@@ -18,6 +18,8 @@
     imports = with self.modules.homeManager; [
       programs-browsers-firefox
 
+      programs-camera-cheese
+
       programs-compression-p7zip
       programs-compression-xz
       programs-compression-zip
@@ -28,13 +30,28 @@
       programs-development-direnv
 
       programs-editors-neovim # for me in case i need to debug
+      programs-editors-vim
 
       programs-fhscompat-nixalien
+
+      programs-fun-fastfetch
 
       programs-monitoring-btop
       programs-monitoring-dmidecode
       programs-monitoring-nvtop
       programs-monitoring-smartctl
+
+      programs-multimedia-images-magick
+      programs-multimedia-videos-ffmpeg
+      programs-multimedia-videos-mpv
+      programs-multimedia-videos-vlc
+
+      programs-networking-openssh
+      programs-networking-tshark
+      programs-networking-wget
+      programs-networking-wireshark
+
+      programs-officesuites-libreoffice
 
       programs-organization-bat
       programs-organization-eza
