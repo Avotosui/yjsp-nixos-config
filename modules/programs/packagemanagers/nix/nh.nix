@@ -7,7 +7,7 @@
         enable = true;
 
         dates = "weekly";
-        extraArgs = "--keep 3 --keep-since 7d --optimise --no-direnv";
+        extraArgs = "--keep 3 --keep-since 30d --optimise --no-direnv";
       };
     };
   };

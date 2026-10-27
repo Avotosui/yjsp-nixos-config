@@ -23,11 +23,21 @@
 
       programs-editors-neovim # for me in case i need to debug
 
+      programs-fhscompat-nixalien
+
+      programs-organization-bat
+      programs-organization-eza
+      programs-organization-fd
+      programs-organization-file
+      programs-organization-ripgrep
+      programs-organization-trash
+      programs-organization-tree
+      programs-organization-yazi
+      programs-organization-zoxide
+
       programs-security-age
       programs-security-ssh
       programs-security-sshagent
-
-      programs-fhscompat-nixalien
 
       programs-shells-bash
       programs-shells-zsh
