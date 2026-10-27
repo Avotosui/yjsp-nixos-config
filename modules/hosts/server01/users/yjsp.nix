@@ -31,6 +31,11 @@
 
       programs-fhscompat-nixalien
 
+      programs-monitoring-btop
+      programs-monitoring-dmidecode
+      programs-monitoring-nvtop
+      programs-monitoring-smartctl
+
       programs-organization-bat
       programs-organization-eza
       programs-organization-fd
