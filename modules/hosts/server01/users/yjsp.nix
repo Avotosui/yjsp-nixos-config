@@ -19,6 +19,7 @@
       programs-browsers-firefox
 
       programs-camera-cheese
+      programs-camera-shotwell
 
       programs-compression-p7zip
       programs-compression-xz
@@ -31,10 +32,15 @@
 
       programs-editors-neovim # for me in case i need to debug
       programs-editors-vim
+      programs-editors-vscode
 
       programs-fhscompat-nixalien
 
       programs-fun-fastfetch
+
+      programs-math-gnomecalculator
+      programs-math-qalculate
+      programs-math-octave
 
       programs-monitoring-btop
       programs-monitoring-dmidecode
@@ -43,10 +49,10 @@
 
       programs-multimedia-images-magick
       programs-multimedia-videos-ffmpeg
+      programs-multimedia-videos-haruna
       programs-multimedia-videos-mpv
       programs-multimedia-videos-vlc
 
-      programs-networking-openssh
       programs-networking-tshark
       programs-networking-wget
       programs-networking-wireshark
