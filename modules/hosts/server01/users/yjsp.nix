@@ -83,6 +83,7 @@
       programs-versioncontrol-git
 
       system-fonts-jetbrainsmono
+      system-fonts-microsoftfonts
       system-hardware-network
       system-users-groups
     ];
