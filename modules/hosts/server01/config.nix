@@ -14,7 +14,7 @@
       programs-shells-zsh
       programs-packagemanagers-nix
 
-      system-boot-systemdboot
+      system-boot-limine
       system-hardware-audio
       system-hardware-graphics
       system-hardware-network
