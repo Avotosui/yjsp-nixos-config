@@ -28,6 +28,7 @@
       programs-customization-catppuccin
       programs-customization-starship
 
+      programs-development-arduino
       programs-development-direnv
 
       programs-editors-neovim # for me in case i need to debug
