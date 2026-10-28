@@ -53,6 +53,8 @@
       programs-multimedia-videos-mpv
       programs-multimedia-videos-vlc
 
+      programs-multiplexers-tmux
+
       programs-networking-wget
       programs-networking-wireshark
 
