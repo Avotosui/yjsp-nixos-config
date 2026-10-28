@@ -53,7 +53,6 @@
       programs-multimedia-videos-mpv
       programs-multimedia-videos-vlc
 
-      programs-networking-tshark
       programs-networking-wget
       programs-networking-wireshark
 
